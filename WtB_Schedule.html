@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    
+<title>Kettlebell</title>
+	
+  		<!-- Latest compiled and minified CSS-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!--Optional theme-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" 
+integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!--Latest compiled and minified JavaScript-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" 
+integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<!--font awesome for icons-->
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+<!--another stylesheet to learn-->
+<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet" text="text/css"/>
+
+
+<!--start calender styling-->
+ <style>
+
+#calendar {
+      background: #FFD835;
+      
+      margin: 0 auto;
+    
+      padding: 55px;
+      height:415px;
+      width: 835px;
+    }
+
+header {
+      overflow: clear;
+      position: relative;
+    }
+
+h2 {
+      font-family: 'PT Sans Narrow', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      margin: 0 0 10px;
+      text-align: center;
+    }
+/*button {
+      position: absolute;
+      top: -4px;
+}*/
+
+.tablebtn {
+      position:absolute;
+      left: 0;
+    }
+
+.tablebtn2 {
+  position:absolute;
+      right: 0;
+    }
+
+@media and (min-width:120px) and (max-wdith:1024px) {
+      
+     table {
+
+      background: #fff;
+      border-collapse: collapse;
+      color: #222;
+      font-family: 'PT Sans', sans-serif;
+      font-size: 13px;
+      width: 100%;
+      
+    }
+  }
+    
+.daysofweek{
+  margin-left:150px;
+  width:400px;
+}
+
+td {
+      border: 1px solid #ccc;
+      color: #444;
+      line-height: 22px;
+      text-align: center;
+    }
+
+tr:first-child td {
+      color: #222;
+      font-weight: 700;
+    }
+
+.selected {
+      background: #f0951d;
+      border: 0;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, .5) inset;
+    }
+    
+
+
+</style>
+
+<!--end calendar styling-->
+
+</head>
+
+<body>
+  
+  <!--begin navbar-->
+  
+  <div class="container">
+  <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+    
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+      
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" 
+              aria-expanded="false">WtB Extra Reps<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="history.html">History</a></li>
+                <li><a href="training.html">Training</a></li>
+                <li><a href="WtB_Schedule.html">WtB Schedule</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="btn navbar-btn" href="https://www.twitter.com"><img src="img/twitter.png" alt="Twitter" height=35px width=35px></a></li>
+            <li><a class="btn navbar-btn" href="https://www.plus.google.com"><img src="img/google_plus.png" alt="Google+" height=35px width=35px></a></li>
+            <li><a class="btn navbar-btn" href="https://www.facebook.com"><img src="img/facebook.png" alt="Facebook" height=35px width=35px></a></li>
+            <li><a class="btn navbar-btn" href="https://www.youtube.com"><img src="img/youtube.png" alt="YouTube" height=35px width=35px></a></li>
+            <!--<li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>-->
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!--end navbar--> 
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+<!--begin jumbotron-->
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="jumbokb"><img src="img/logo2_kb.png" width="195px"/>Worship the <span class="glyphicon glyphicon-xbt" aria-hidden="true">ell</h1>
+      </div>
+    </div>
+<!--end jumbotron-->
+
+<!--start calendar-->
+
+<div id="calendar">
+  <header>
+    <button class="tablebtn">«</button>
+    <h2>May 2016</h2>
+    <button class="tablebtn2">»</button>
+  </header>
+<table class="daysofweek">
+  <tr>
+    <td>Sunday</td>
+    <td>Monday</td>
+    <td>Tuesday</td>
+    <td>Wednesday</td>
+    <td>Thursday</td>
+    <td>Friday</td>
+    <td>Saturday</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>9</td>
+    <td>10</td>
+    <td>11</td>
+    <td>12</td>
+    <td>13</td>
+    <td>14</td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>16</td>
+    <td>17</td>
+    <td>18</td>
+    <td class="selected">18</td>
+    <td>19</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>21</td>
+    <td>22</td>
+    <td>23</td>
+    <td>24</td>
+    <td>25</td>
+    <td>26</td>
+    <td>27</td>
+  </tr>
+  <tr>
+    <td>28</td>
+    <td>29</td>
+    <td>30</td>
+    <td>31</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+<!--end bootstrap calendar-->
+
+<!--begin sign in form-->
+
+<form class="form-inline">
+  <div class="form-group">
+    <label for="exampleInputName2">UserID</label>
+    <input type="text" class="form-control" id="exampleInputName2" placeholder="UserId">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail2">Password</label>
+    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Password">
+  </div>
+  <button type="submit" class="btn btn-primary">Sign In</button>
+</form>
+</div>
+
+
+<!--end sing in form-->
+
+<footer>
+  <div class="footloose" style="width 100px; float:left; height:100px; margin:20px"><h5>COMPANY</h5>
+  <ul class="list-unstyled">
+    <li>Terms and Conditions</li>
+    <li>Privacy policy</li>
+    <li>Advertise with Us</li>
+  </ul>
+  </div>
+  
+  <div class="footloose" style="width 100px; float:right; height:100px; margin:20px"><h5>COMMUNITY</h5>
+  <ul class="list-unstyled">
+  <li><button type="button" class="btn btn-info">Forum</button></li>
+  <li><button class="btn btn-success" type="button">Live Chat</button></li>
+  </ul>
+  </div>
+  
+</footer>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script scr="js/jquery.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script> <!--not sure if necessary=reaserch-->
+		<script src="js/bootstrap.js"></script>
+		<script src="js/ka_file.js"></script>
+</body>
+</html>
+
+
+
